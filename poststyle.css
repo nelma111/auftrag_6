@@ -1,0 +1,168 @@
+/* RESET DEFAULTS */
+* {
+	box-sizing: content-box;
+}
+html {
+	font-size: 100%;
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    flex-direction: column;
+    height: 185vh;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+/* MAIN CSS */
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+}
+.logo {
+    align-self: flex-start;
+    color: rgb(211, 108, 143);
+    font-weight: bold;
+    font-size: 110%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.link {
+    font-size: 90%;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.active{
+    font-weight: bold;
+}
+.image{
+    padding-top: .8rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.pp{
+    border-radius: 50%;
+    height: 3ch;
+}
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 90%;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    padding-top: 3rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-bottom: 3rem;
+}
+.footer_nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+.logo_footer {
+    font-weight: bold;
+    padding-right: 5rem;
+}
+.footer_nav_collum {
+    padding-right: 3rem;
+}
+.footer_link {
+    padding-bottom: .3rem;
+}
+.sub_to_newsletter {
+    display: flex;
+    flex-direction: column;
+    font-size: 120%;
+    color: rgb(177, 177, 177);
+}
+.email_field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid rgb(177, 177, 177);
+    border-radius: .6rem;
+    padding: .4rem;
+}
+.email {
+    box-sizing: border-box;
+    border: 1px solid rgb(160, 160, 160);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: rgb(160, 160, 160);
+}
+.email_send {
+    padding-right: .4rem;
+    padding-left: .4rem;
+    color: white;
+}
+.email_input {
+    width: 140%;
+}
+input[type=email] {
+    background-color: rgb(160, 160, 160);
+    color: white;
+    width: 100%;
+}
+.stnl_text {
+    font-size: 80%;
+}
+.socialmedia {
+    font-size: 160%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+}
+.socialmedia_link {
+    padding-left: 2.5rem;
+}
+.article_header {
+    height: 30%;
+    background-image: url("img/forrest_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.article_title {
+    font-size: 300%;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.article_links {
+    display: flex;
+    flex-direction: row;
+}
+.worldnews {
+    padding-left: 5rem;
+}
+.maker {
+    display: flex;
+    flex-direction: row;
+}
