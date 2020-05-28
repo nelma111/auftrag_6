@@ -1,0 +1,360 @@
+/* RESET DEFAULTS */
+* {
+	box-sizing: content-box;
+}
+html {
+	font-size: 100%;
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    flex-direction: column;
+    height: 185vh;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+/* MAIN CSS */
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+}
+.logo {
+    align-self: flex-start;
+    color: rgb(211, 108, 143);
+    font-weight: bold;
+    font-size: 110%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.link {
+    font-size: 90%;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.active{
+    font-weight: bold;
+}
+.image{
+    padding-top: .8rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.pp{
+    border-radius: 50%;
+    height: 3ch;
+}
+/* News */
+.news {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* World News */
+.world_news {
+    width: 60%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/forrest_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.wn_text {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.wn_title {
+    font-weight: bold;
+    font-size: 150%;
+    padding-bottom: 3rem;
+    border-bottom: solid;
+    border-width: .1rem;
+    border-color: white;
+}
+.wn_subtitle {
+    font-weight: bold;
+    font-size: 140%;
+    padding-top: 2rem;
+}
+.wn_content {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+.btn {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 90%;
+        background-color: rgb(211, 108, 143);
+        border-radius: 5px;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        min-width: 80px;
+        text-align: center;
+        width: fit-content;
+}
+/* More News */
+.more_news {
+    width: 40%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+.mn_title {
+    font-weight: bold;
+    font-size: 160%;
+    padding-bottom: 3rem;
+    border-bottom: solid;
+    border-width: .05rem;
+    border-color: rgb(173, 173, 173);
+}
+.mn_heading {
+    font-size: 120%;
+    color: rgb(211, 108, 143);
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.content_title{
+    font-size: 120%;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+.content{
+    color: rgb(173, 173, 173);
+}
+.time_past{
+    font-size: 95%;
+    color: rgb(173, 173, 173);
+    font-style: italic;
+    padding-top: .6rem;
+}
+/* Content */
+.trending {
+    background-color: rgb(235, 235, 235);
+    padding-top: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    height: 40vh;
+}
+.part_title {
+    font-weight: bold;
+    font-size: 160%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.trending_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.trending_post {
+    width: 30%;
+    height: 30vh;
+    background-color: white;
+    border-radius: .6rem;
+}
+.trending_img {
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .6rem .6rem 0 0;
+}
+.img_1 {
+    background-image: url("/img/mountain_lake.jpg");
+}
+.img_2 {
+    background-image: url("/img/beach.jpg");
+}
+.img_3 {
+    background-image: url("/img/ballon.jpg");
+}
+.trending_article {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.trending_title {
+    padding-top: 1.5rem;
+}
+.happening_now {
+    background-color: rgb(235, 235, 235);
+    padding-top: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    height: 80vh;
+}
+.hn_contnent {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.large_article {
+    width: 65%;
+    color: white;
+}
+.hn_post_large {
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;   
+    justify-content: flex-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    border-radius: .6rem;
+    margin-bottom: 3rem;
+}
+.img_4 {
+    background-image: url("/img/golden_gate_bridge.jpg");
+}
+.img_5 {
+    background-image: url("/img/forrest_2.jpg");
+}
+.article_categorie {
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 120%;
+}
+.hn_title {
+    font-size: 180%;
+    font-weight: bold; 
+    padding-bottom: 1rem;
+}
+.hn_content{
+    font-size: 110%;
+}
+.img_6 {
+    background-image: url("/img/elephant.jpg");
+}
+.img_7 {
+    background-image: url("/img/coast.jpg");
+}
+.img_8 {
+    background-image: url("/img/mountain_hut.jpg");
+}
+.hn_post_small {
+    height: 35%;
+}
+.hn_small_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    border-radius: .6rem;
+}
+.small_article {
+    width: 30%;
+}
+.content_title {
+    padding-top: 1rem;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 90%;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    padding-top: 3rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-bottom: 3rem;
+}
+.footer_nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+.logo_footer {
+    font-weight: bold;
+    padding-right: 5rem;
+}
+.footer_nav_collum {
+    padding-right: 3rem;
+}
+.footer_link {
+    padding-bottom: .3rem;
+}
+.sub_to_newsletter {
+    display: flex;
+    flex-direction: column;
+    font-size: 120%;
+    color: rgb(177, 177, 177);
+}
+.email_field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid rgb(177, 177, 177);
+    border-radius: .6rem;
+    padding: .4rem;
+}
+.email {
+    box-sizing: border-box;
+    border: 1px solid rgb(160, 160, 160);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: rgb(160, 160, 160);
+}
+.email_send {
+    padding-right: .4rem;
+    padding-left: .4rem;
+    color: white;
+}
+.email_input {
+    width: 140%;
+}
+input[type=email] {
+    background-color: rgb(160, 160, 160);
+    color: white;
+    width: 100%;
+}
+.stnl_text {
+    font-size: 80%;
+}
+.socialmedia {
+    font-size: 160%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+}
+.socialmedia_link {
+    padding-left: 2.5rem;
+}
