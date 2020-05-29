@@ -10,12 +10,16 @@
 <body>
     <!-- Header -->
     <div class="header">
+        <div class="navigation_menu">
+            <i class="fas fa-align-left"></i>
+        </div>
         <div class="logo">
             LOGO
         </div>
         <div class="nav_complete">
+            <div class="nav_with_pp">
             <div class="nav">
-                <div class="link active">
+                <div class="link active" onmouseover="showMenu()" onmouseout="hideMenu()">
                     HOME
                 </div>
                 <div class="link">
@@ -27,11 +31,12 @@
                 <div class="link">
                     CONTACT
                 </div>
-                <div class="image">
-                    <img src="img/pp.png" class="pp">
-                </div>
             </div>
-                <div class="menu_nav">
+            <div class="image">
+                <img src="img/pp.png" class="pp">
+            </div>
+            </div>
+                <div id="menu" class="menu_nav hidden" onmouseover="showMenu()" onmouseout="hideMenu()">
                     <div class="menu_link">
                         WORLD NEWS
                     </div>
@@ -324,5 +329,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

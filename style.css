@@ -40,11 +40,24 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.navigation_menu {
+    display: none;
+    align-self: flex-start;
+    font-size: 110%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .nav_complete {
     display: flex;
     flex-direction: column;
 }
 .nav {
+    display: flex;
+    flex-direction: row;
+}
+.nav_with_pp {
     display: flex;
     flex-direction: row;
 }
@@ -66,17 +79,23 @@ a {
     width: 15vh;
     border-radius: 0 0 .6rem .6rem;
 }
+.hidden {
+    display: none;
+}
 .menu_link {
     font-size: 90%;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.menu_link:hover {
+    font-weight: bold;
+}
 .active{
     font-weight: bold;
 }
 .image{
-    padding-top: .8rem;
+    padding-top: 1.1rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -306,6 +325,7 @@ a {
 .content_title {
     padding-top: 1rem;
 }
+/* FOOTER */
 .footer {
     display: flex;
     flex-direction: row;
@@ -379,4 +399,132 @@ input[type=email] {
 }
 .socialmedia_link {
     padding-left: 2.5rem;
+}
+@media screen and (max-width: 400px) {
+    body{
+        font-weight: 300;
+        margin: 0;
+        padding: 0;   
+        display: flex;
+        flex-direction: column;
+        height: 530vh;
+        line-height: 1.25;
+    }
+    .header {
+        height: 6vh;
+    }
+    .navigation_menu {
+        display: unset;
+    }
+    .news {
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .world_news {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("img/forrest_1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    .wn_text {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .more_news {
+        width: 83%;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    .trending {
+        background-color: rgb(235, 235, 235);
+        padding-top: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        height: 160vh;
+    }
+    .trending_content {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .trending_post {
+        width: 100%;
+        height: 40vh;
+        border-radius: .6rem;
+        padding-bottom: 2rem;
+    }
+    .happening_now {
+        background-color: rgb(235, 235, 235);
+        padding-top: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        height: 240vh;
+    }
+    .hn_contnent {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .large_article {
+        width: 100%;
+        color: white;
+    }
+    .hn_post_large {
+        height: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;   
+        justify-content: flex-start;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        margin-bottom: 3rem;
+    }
+    .small_article {
+        width: 100%;
+        height: 80vh;
+    }
+    .hn_post_small {
+        height: 50%;
+        margin-bottom: 5%;
+    }
+    .hn_small_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70%;
+        border-radius: .6rem;
+    }
+    .footer {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .image{
+        padding-top: .8rem;
+        padding-bottom: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
