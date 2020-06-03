@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="body">
     <!-- Header -->
-    <div class="header">
+    <div class="header" id="header">
         <div class="navigation_menu">
-            <i class="fas fa-align-left"></i>
+            <div class="navigation" onclick="showMenu_moblie()">
+                <i class="fas fa-align-left"></i>
+            </div>
         </div>
         <div class="logo">
             LOGO
@@ -20,20 +22,25 @@
             <div class="nav_with_pp">
             <div class="nav">
                 <div class="link active" onmouseover="showMenu()" onmouseout="hideMenu()">
+                    <i class="fas fa-home icon"></i>
                     HOME
                 </div>
                 <div class="link">
+                    <i class="fas fa-compass icon"></i>
                     DISCOVERY
                 </div>
                 <div class="link">
+                    <i class="fas fa-image icon"></i>
                     PHOTOS
                 </div>
                 <div class="link">
+                    <i class="far fa-envelope icon"></i>
                     CONTACT
                 </div>
             </div>
             <div class="image">
                 <img src="img/pp.png" class="pp">
+                <f class="link icon">PROFILE</f>
             </div>
             </div>
                 <div id="menu" class="menu_nav hidden" onmouseover="showMenu()" onmouseout="hideMenu()">
@@ -59,7 +66,7 @@
         </div>
     </div>
     <!-- News -->
-    <div class="news">
+    <div class="news" id="news">
         <div class="world_news">
             <div class="wn_text">
                 <div class="wn_title">
@@ -119,7 +126,7 @@
         </div>
     </div>
     <!-- Trending -->
-    <div class="trending">
+    <div class="trending" id="trending">
         <div class="part_title">
             TRENDING
         </div>
@@ -184,7 +191,7 @@
 
         </div>
     </div>
-    <div class="happening_now">
+    <div class="happening_now" id="happening_now">
         <div class="part_title">
             HAPPENING NOW
         </div>
@@ -275,14 +282,14 @@
 
 
     </div>
-    <div class="footer">
+    <div class="footer footer_mobile" id="footer">
         <div class="footer_nav">
             <div class="footer_nav_collum">
                 <div class="footer_logo">
                     LOGO
                 </div>
             </div>
-            <div class="footer_nav_collum">
+            <div class="footer_nav_collum collum1">
                 <div class="footer_link">Home</div>
                 <div class="footer_link">Dicsovery</div>
                 <div class="footer_link">Photos</div>
