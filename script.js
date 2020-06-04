@@ -66,8 +66,8 @@ function cloceMenu() {
     x.classList.remove("header_mobile");
 
     var z = document.getElementById("footer");
-    z.classList.add("footer_mobile");
     z.classList.remove("footer_open");
+    z.classList.add("footer_mobile");
     document.getElementById("openmenu_btn").style.display = "unset";
 
     document.getElementById("nav_mobile").style.display = "none";
