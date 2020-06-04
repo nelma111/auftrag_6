@@ -10,7 +10,7 @@
 <body id="body">
     <!-- Header -->
     <div class="header" id="header">
-        <div class="navigation_menu">
+        <div class="navigation_menu" id="openmenu_btn">
             <div class="navigation" onclick="showMenu_moblie()">
                 <i class="fas fa-align-left"></i>
             </div>
@@ -19,28 +19,28 @@
             LOGO
         </div>
         <div class="nav_complete">
-            <div class="nav_with_pp">
-            <div class="nav">
+            <div class="nav_with_pp" id="nav_with_pp">
+            <div class="nav" id="nav_mobile">
                 <div class="link active" onmouseover="showMenu()" onmouseout="hideMenu()">
-                    <i class="fas fa-home icon"></i>
+                    <i class="fas fa-home icon size" id="icon1"></i>
                     HOME
                 </div>
                 <div class="link">
-                    <i class="fas fa-compass icon"></i>
+                    <i class="fas fa-compass icon size"id="icon2"></i>
                     DISCOVERY
                 </div>
                 <div class="link">
-                    <i class="fas fa-image icon"></i>
+                    <i class="fas fa-image icon size" id="icon3"></i>
                     PHOTOS
                 </div>
                 <div class="link">
-                    <i class="far fa-envelope icon"></i>
+                    <i class="far fa-envelope icon size" id="icon4"></i>
                     CONTACT
                 </div>
             </div>
-            <div class="image">
-                <img src="img/pp.png" class="pp">
-                <f class="link icon">PROFILE</f>
+            <div class="link">
+                <i class="fas fa-user-circle pp"></i>
+                <f class="icon" id="icon5">PROFILE</f>
             </div>
             </div>
                 <div id="menu" class="menu_nav hidden" onmouseover="showMenu()" onmouseout="hideMenu()">
@@ -282,9 +282,9 @@
 
 
     </div>
-    <div class="footer footer_mobile" id="footer">
+    <div class="footer_mobile footer" id="footer">
         <div class="footer_nav">
-            <div class="footer_nav_collum">
+            <div class="footer_nav_collum collum_logo">
                 <div class="footer_logo">
                     LOGO
                 </div>
@@ -295,13 +295,13 @@
                 <div class="footer_link">Photos</div>
                 <div class="footer_link">Contact</div>
             </div>
-            <div class="footer_nav_collum">
+            <div class="footer_nav_collum collum2">
                 <div class="footer_link">About</div>
                 <div class="footer_link">Help</div>
                 <div class="footer_link">Terms</div>
                 <div class="footer_link">Guidlines</div>
             </div>
-            <div class="footer_nav_collum">
+            <div class="footer_nav_collum collum3">
                 <div class="footer_link">Testimonials</div>
                 <div class="footer_link">Advertise</div>
                 <div class="footer_link">Intergration</div>

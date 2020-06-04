@@ -78,6 +78,10 @@ a {
 }
 .icon {
     display: none;
+    padding-right: 1rem;
+}
+.size {
+    font-size: 120%;
 }
 .menu_nav {
     z-index: 1000;
@@ -100,15 +104,9 @@ a {
 .active{
     font-weight: bold;
 }
-.image{
-    padding-top: .8rem;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
+.pp {
+    font-size: 140%;
     padding-right: 1rem;
-}
-.pp{
-    border-radius: 50%;
-    height: 3ch;
 }
 /* News */
 .news {
@@ -533,14 +531,21 @@ input[type=email] {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .header_open {
-        order: -2;
-        position: fixed;
-        height: 70vh;
-        width: 100%;
-    }.footer_open {
-        margin-top: 70vh;
-        height: 50vh;
+    .footer_open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 90%;
+        background-color: rgb(160, 160, 160);
+        color: white;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+
+        margin-top: 60vh;
+        height: 40vh;
         width: 100%;
         position: absolute;
         order: -1;
@@ -552,5 +557,54 @@ input[type=email] {
     }
     .footer_logo {
         display: none;
+    }
+    .footer_nav_collum {
+        padding-right: 0;
+    }
+    .footer_nav {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+    .socialmedia {
+        width: 60%;
+        font-size: 160%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .socialmedia_link {
+        padding-left: 0;
+    }
+    .collum_logo {
+        display: none;
+    }
+    .footer_link {
+        font-size: 120%;
+        line-height: 200%;
+    }
+    .nav_complete {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+    .nav_with_pp {
+        display: flex;
+        flex-direction: column;
+    }
+    .header_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 15%;
+        background-color: rgb(235, 235, 235);
+        order: -2;
+        position: absolute;
+        height: 60vh;
+        width: 85%;
+        font-size: 120%;
     }
 }
