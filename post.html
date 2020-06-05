@@ -9,26 +9,60 @@
 </head>
 <body class="body">
     <!-- Header -->
-    <div class="header">
+    <div class="header" id="header">
+        <div class="navigation_menu" id="openmenu_btn">
+            <div class="navigation" onclick="showMenu_moblie()">
+                <i class="fas fa-align-left"></i>
+            </div>
+        </div>
         <div class="logo">
             LOGO
         </div>
-        <div class="nav">
-            <div class="link active">
-                HOME
+        <div class="nav_complete">
+            <div class="nav_with_pp" id="nav_with_pp">
+            <div class="nav" id="nav_mobile">
+                <div class="link active" onmouseover="showMenu()" onmouseout="hideMenu()">
+                    <i class="fas fa-home icon size" id="icon1"></i>
+                    HOME
+                </div>
+                <div class="link">
+                    <i class="fas fa-compass icon size"id="icon2"></i>
+                    DISCOVERY
+                </div>
+                <div class="link">
+                    <i class="fas fa-image icon size" id="icon3"></i>
+                    PHOTOS
+                </div>
+                <div class="link">
+                    <i class="far fa-envelope icon size" id="icon4"></i>
+                    CONTACT
+                </div>
             </div>
             <div class="link">
-                DISCOVERY
+                <i class="fas fa-user-circle pp"></i>
+                <f class="icon" id="icon5">PROFILE</f>
             </div>
-            <div class="link">
-                PHOTOS
             </div>
-            <div class="link">
-                CONTACT
-            </div>
-            <div class="image">
-                <img src="img/pp.png" class="pp">
-            </div>
+                <div id="menu" class="menu_nav hidden" onmouseover="showMenu()" onmouseout="hideMenu()">
+                    <div class="menu_link">
+                        WORLD NEWS
+                    </div>
+                    <div class="menu_link">
+                        TRAVEL
+                    </div>
+                    <div class="menu_link active">
+                        TECHNOLOGY
+                    </div>
+                    <div class="menu_link">
+                        CITY
+                    </div>
+                    <div class="menu_link">
+                        CULTURE
+                    </div>
+                    <div class="menu_link">
+                        MORE...
+                    </div>
+                </div>
         </div>
     </div>
     
@@ -127,5 +161,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
