@@ -6,7 +6,7 @@ html {
 	font-size: 100%;
 }
 body{
-    font-family: 'Architects Daughter', cursive;
+    font-family: sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;   
@@ -303,7 +303,13 @@ a {
 .hn_title {
     font-size: 180%;
     font-weight: bold; 
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.hn_text > span {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 0 0px 0px rgb(255, 255, 255), -5px 0 0px 0px rgb(255, 255, 255);
+    padding: 0.15rem;
+    color: black;
 }
 .hn_content{
     font-size: 110%;
@@ -510,7 +516,6 @@ input[type=email] {
         padding-top: 3rem;
         padding-bottom: 5rem;
         margin-bottom: 3rem;
-        text-shadow: 4px 4px 8px #000;
     }
     .small_article {
         width: 100%;
