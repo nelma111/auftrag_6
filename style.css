@@ -366,7 +366,7 @@ a {
     display: flex;
     flex-direction: column;
     font-size: 120%;
-    color: rgb(177, 177, 177);
+    color: rgb(255, 255, 255);
 }
 .email_field {
     display: flex;
@@ -404,7 +404,6 @@ input[type=email] {
     font-size: 160%;
     display: flex;
     flex-direction: row;
-    padding-left: 20%;
 }
 .socialmedia_link {
     padding-left: 2.5rem;
