@@ -6,15 +6,16 @@ html {
 	font-size: 100%;
 }
 body{
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     font-weight: 300;
     margin: 0;
     padding: 0;   
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 #body {
-    height: 185vh;
+    height: auto;
     line-height: 1.5;
 }
 a {
@@ -122,7 +123,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("img/forrest_1.jpg");
+    background-image: url("./img/forrest_1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,6 +149,9 @@ a {
 .wn_content {
     padding-top: .5rem;
     padding-bottom: 1rem;
+}
+.wn_btn {
+    margin: 1rem;
 }
 .btn {
         color: white;
@@ -210,7 +214,6 @@ a {
     padding-top: 1rem;
     padding-right: 6rem;
     padding-left: 6rem;
-    height: 40vh;
 }
 .part_title {
     font-weight: bold;
@@ -228,22 +231,24 @@ a {
     height: 30vh;
     background-color: white;
     border-radius: .6rem;
+    margin-bottom: 1rem;
 }
 .trending_img {
-    height: 60%;
+    height: auto;
+    min-height: 10rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: .6rem .6rem 0 0;
 }
 .img_1 {
-    background-image: url("/img/mountain_lake.jpg");
+    background-image: url("./img/mountain_lake.jpg");
 }
 .img_2 {
-    background-image: url("/img/beach.jpg");
+    background-image: url("./img/beach.jpg");
 }
 .img_3 {
-    background-image: url("/img/ballon.jpg");
+    background-image: url("./img/ballon.jpg");
 }
 .trending_article {
     padding-left: 2rem;
@@ -404,24 +409,25 @@ input[type=email] {
 .socialmedia_link {
     padding-left: 2.5rem;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 667px) {
     #body{
         font-weight: 300;
         margin: 0;
         padding: 0;   
         display: flex;
         flex-direction: column;
-        height: 530vh;
+        height: auto;
         line-height: 1.25;
     }
     .header {
-        height: 6vh;
+        height: 3em;
+        min-height: 3em;
     }
     .navigation_menu {
         display: unset;
     }
     .news {
-        height: 120vh;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -429,7 +435,6 @@ input[type=email] {
     }
     .world_news {
         width: 100%;
-        height: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -438,13 +443,14 @@ input[type=email] {
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .wn_text {
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .more_news {
-        width: 83%;
         display: flex;
         flex-direction: column;   
         align-items: center;
@@ -453,25 +459,27 @@ input[type=email] {
         padding-right: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
+        width: auto;
     }
     .trending {
         background-color: rgb(235, 235, 235);
         padding-top: 1rem;
         padding-right: 2rem;
         padding-left: 2rem;
-        height: 160vh;
+        height: auto;
     }
     .trending_content {
-        height: 90%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     .trending_post {
         width: 100%;
-        height: 40vh;
+        min-height: 40vh;
+        height: auto;
         border-radius: .6rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
     .happening_now {
         background-color: rgb(235, 235, 235);
@@ -503,6 +511,7 @@ input[type=email] {
         padding-top: 3rem;
         padding-bottom: 5rem;
         margin-bottom: 3rem;
+        text-shadow: 4px 4px 8px #000;
     }
     .small_article {
         width: 100%;
@@ -543,13 +552,11 @@ input[type=email] {
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 0;
-
-        margin-top: 60vh;
-        height: 40vh;
+        height: auto;
+        min-height: 20rem;
         width: 100%;
-        position: absolute;
-        order: -1;
-    }.sub_to_newsletter {
+    }
+    .sub_to_newsletter {
         display: none;
     }
     .collum1 {
@@ -598,13 +605,21 @@ input[type=email] {
     .header_mobile {
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
         justify-content: space-evenly;
         padding-left: 15%;
         background-color: rgb(235, 235, 235);
-        order: -2;
-        position: absolute;
-        height: 60vh;
+        height: 24rem;
         width: 85%;
         font-size: 120%;
+        flex: 1;
     }
+}
+
+.time_past {
+    font-style: normal;
+}
+
+.time_past_crusiv {
+    font-style: italic;
 }
