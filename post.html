@@ -13,7 +13,7 @@
     <!-- Header -->
     <div class="header" id="header">
         <div class="navigation_menu" id="openmenu_btn">
-            <div class="navigation" onclick="showMenu_moblie()">
+            <div class="navigation" onclick="showMenu_moblie_post()">
                 <i class="fas fa-align-left"></i>
             </div>
         </div>
@@ -49,10 +49,10 @@
                 <div class="menu_link">
                     WORLD NEWS
                 </div>
-                <div class="menu_link">
+                <div class="menu_link active">
                     TRAVEL
                 </div>
-                <div class="menu_link active">
+                <div class="menu_link">
                     TECHNOLOGY
                 </div>
                 <div class="menu_link">
@@ -70,7 +70,7 @@
 
     <!-- Content -->
 
-    <div class="article_header">
+    <div class="article_header" id="article_header">
         <div class="article_title">
             AMAZING PLACES IN AMERICA TO VISIT
         </div>
@@ -87,9 +87,9 @@
         <div class="maker_next">
             <div class="maker">
                 <div class="maker_img">
-                    <i class="fas fa-user-circle pp"></i>
+                    <i class="fas fa-user-circle"></i>
                 </div>
-                <div class="maker_name">
+                <div class="maker_name mobile_hidden">
                     by Steve
                 </div>
             </div>
@@ -97,39 +97,42 @@
                 <div class="next_story_title">
                     NEXT STORY
                 </div>
-                <div class="next_story_subtitle">
+                <div class="next_story_subtitle mobile_hidden">
                     At vero et accusam
                 </div>
-                <div class="next_story_desc">
-                    Lorem ipsum dolor sit amet, consetetur 
+                <div class="next_story_desc mobile_hidden">
+                    Lorem ipsum dolor sit amet, consetetur
                     sadipscing elitr.
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="post_content">
+    <div class="post_content" id="post_content">
         <div class="post_left">
             <div class="post_title">Quisque viverra interdum velit?</div>
-            <div class="post_content">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
-                et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
-                sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum 
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-                voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum 
-                dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
-                elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
-                takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel 
-                eum iriure dolor in hendrerit in vulputate velit esse molestie 
-                consequat, vel illum dolore eu feugiat nulla facilisis at vero 
-                eros et accumsan et iusto odio dignissim qui blandit praesent 
-                luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            <div class="content_text">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                    dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                    diam voluptua.
+                </p>
+                <p>
+                    At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                    dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                    takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel
+                    eum iriure dolor in hendrerit in vulputate velit esse molestie
+                    consequat.
+                </p>
             </div>
             <div class="post_subtitle">
                 Small Title - Subtitle
@@ -149,10 +152,10 @@
                     Jonatan Walker
                 </div>
                 <div class="comment_content">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                    sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
-                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,
                     no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </div>
                 <div class="time_past">
@@ -168,11 +171,11 @@
                 <div class="comment_creator">Brenda Mercer</div>
                 <div class="comment_content">
                     interdum velit euismod in pellentesque massa placerat duis
-                     ultricies lacus sed turpis tincidunt id aliquet risus feugiat 
-                     in ante metus dictum at tempor commodo ullamcorper a lacus 
-                     vestibulum sed arcu non odio euismod lacinia at quis risus 
-                     sed vulputate odio ut enim blandit volutpat maecenas volutpat 
-                     blandit aliquam etiam erat
+                    ultricies lacus sed turpis tincidunt id aliquet risus feugiat
+                    in ante metus dictum at tempor commodo ullamcorper a lacus
+                    vestibulum sed arcu non odio euismod lacinia at quis risus
+                    sed vulputate odio ut enim blandit volutpat maecenas volutpat
+                    blandit aliquam etiam erat
                 </div>
                 <div class="time_past">
                     <span class="time_icon">
@@ -184,11 +187,7 @@
                 </div>
             </div>
             <div class="post_video">
-                <iframe 
-                    src="https://www.youtube.com/embed/zBzpmuCiKVI" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://www.youtube.com/embed/zBzpmuCiKVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video_comment"></iframe>
             </div>
         </div>
     </div>

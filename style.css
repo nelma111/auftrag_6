@@ -338,6 +338,10 @@ a {
 .content_title {
     padding-top: 1rem;
 }
+.pp {
+    font-size: 140%;
+    padding-right: 1rem;
+}
 /* FOOTER */
 .footer {
     display: flex;
