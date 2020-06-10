@@ -105,10 +105,6 @@ a {
 .active{
     font-weight: bold;
 }
-.pp {
-    font-size: 140%;
-    padding-right: 1rem;
-}
 /* News */
 .news {
     height: 50vh;
