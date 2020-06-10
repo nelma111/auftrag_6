@@ -203,6 +203,8 @@ a {
     color: rgb(173, 173, 173);
 }
 .time_past{
+    display: flex;
+    flex-direction: row;
     font-size: 95%;
     color: rgb(173, 173, 173);
     font-style: italic;
