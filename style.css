@@ -31,7 +31,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(235, 235, 235);
-    height: 4vh;
+    height: 3rem;
 }
 .logo {
     align-self: flex-start;
@@ -107,7 +107,6 @@ a {
 }
 /* News */
 .news {
-    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -174,6 +173,8 @@ a {
     justify-content: center;
     padding-right: 4rem;
     padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .mn_title {
     font-weight: bold;
@@ -226,7 +227,6 @@ a {
 }
 .trending_post {
     width: 30%;
-    height: 30vh;
     background-color: white;
     border-radius: .6rem;
     margin-bottom: 1rem;
@@ -251,6 +251,7 @@ a {
 .trending_article {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 1rem;
 }
 .trending_title {
     padding-top: 1.5rem;
@@ -260,7 +261,6 @@ a {
     padding-top: 1rem;
     padding-right: 6rem;
     padding-left: 6rem;
-    height: 75vh;
 }
 .hn_contnent {
     height: 90%;
@@ -271,6 +271,7 @@ a {
 .large_article {
     width: 65%;
     color: white;
+    padding-bottom: 3rem;
 }
 .hn_post_large {
     height: 30%;
@@ -323,17 +324,20 @@ a {
 }
 .hn_post_small {
     height: 30%;
-    margin-bottom: 5%;
 }
 .hn_small_img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50%;
+    height: 60%;
     border-radius: .6rem;
 }
 .small_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
+    padding-bottom: 3rem;
 }
 .content_title {
     padding-top: 1rem;
@@ -493,10 +497,8 @@ input[type=email] {
         padding-top: 1rem;
         padding-right: 2rem;
         padding-left: 2rem;
-        height: 240vh;
     }
     .hn_contnent {
-        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
