@@ -31,7 +31,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(235, 235, 235);
-    height: 4vh;
+    height: 3rem;
 }
 .logo {
     align-self: flex-start;
@@ -87,7 +87,7 @@ a {
 .menu_nav {
     z-index: 1000;
     background-color: rgb(235, 235, 235);
-    width: 15vh;
+    width: 10rem;
     border-radius: 0 0 .6rem .6rem;
 }
 .hidden {
@@ -183,7 +183,21 @@ input[type=email] {
 .socialmedia_link {
     padding-left: 2.5rem;
 }
-
+.menu_vh {
+    height: 100vh;
+}
+.close_menu {
+	font-style: normal;
+	color: transparent;  
+    text-shadow: 0 0 0 black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.noneDisplay {
+    display: none;
+}
 /* POST TITLE */
 
 .article_header {
@@ -197,6 +211,7 @@ input[type=email] {
     justify-content: center;
     align-items: center;
     color: white;
+    padding-left: 2rem;
 }
 .article_title {
     font-size: 300%;
@@ -304,6 +319,7 @@ input[type=email] {
 }
 .comment_content {
     font-style: italic;
+    text-align: justify;
 }
 .post_subtitle {
     font-weight: bold;
@@ -318,10 +334,11 @@ input[type=email] {
         flex-direction: column;
         height: auto;
         line-height: 1.4;
+        background-color: rgb(235, 235, 235);
     }
     .header {
-        height: 3em;
-        min-height: 3em;
+        height: 3.5em;
+        min-height: 3.5em;
     }
     .navigation_menu {
         display: unset;
