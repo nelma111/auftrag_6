@@ -648,3 +648,231 @@ input[type=email] {
 .time_past_crusiv {
     font-style: italic;
 }
+
+
+/* POST TITLE */
+
+.article_header {
+    height: 30%;
+    background-image: url("img/forrest_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 2rem;
+}
+.article_title {
+    font-size: 300%;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin-top: 20rem;
+}
+.article_links {
+    display: flex;
+    flex-direction: row;
+}
+.worldnews {
+    padding-left: 5rem;
+}
+.maker_next {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 8rem;
+    padding-bottom: 1.6rem;
+}
+.maker {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+.maker_name {
+    padding-top: .1rem;
+    padding-left: .3rem;
+}
+.next_story {
+    align-self: flex-end;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23B5B5B5FF' stroke-width='4' stroke-dasharray='4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+    border-radius: 1rem;
+    width: 20rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.next_story_title {
+    font-size: 105%;
+    color: rgb(211, 108, 143);;
+}
+.next_story_subtitle {
+    font-weight: bold;
+}
+
+/* POST CONTENT */
+
+.post_content {
+    display: flex;
+    flex-direction: row;
+    padding: 6rem;
+
+}
+.post_left {
+    width: 80vw;
+    min-width: 20rem;
+    padding-right: 3rem;
+    border-right: solid lightgray 1px;
+}
+.post_title {
+    font-size: 180%;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.post_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    padding-left: 3rem;
+}
+.content_text {
+    color: gray;
+}
+.post_video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 52.63%; /* 9/16 = 0.5625 */
+}
+#video_comment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+}
+.time_past{
+    display: flex;
+    flex-direction: row;
+    font-size: 95%;
+    color: rgb(173, 173, 173);
+    padding-top: .6rem;
+}
+.comment_creator {
+    font-size: 120%;
+    font-weight: bold;
+    /* padding-bottom: .6rem; */
+}
+.comment {
+    padding-bottom: 1rem;
+}
+.comment_content {
+    font-style: italic;
+    text-align: justify;
+}
+.post_subtitle {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 667px) {
+    /* INDIVIDUEL */
+
+    .post_content {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    
+    }
+    .post_left {
+        width: auto;
+        min-width: 10rem;
+        padding-right: 0;
+        border-right: hidden;
+        border-bottom: solid lightgray 1px;
+        padding-bottom: 2rem;
+    }
+    .post_title {
+        font-size: 180%;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+    .post_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    .content_text {
+        color: gray;
+        text-align: justify;
+    }
+    .post_video {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 52.63%; /* 9/16 = 0.5625 */
+    }
+    #video_comment {
+        border-radius: 0;
+    }
+
+    .article_title {
+        font-size: 160%;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 1rem;
+        margin-top: 6rem;
+    }
+    .article_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 80%;
+    }
+    .worldnews {
+        padding-left: 4rem;
+    }
+    .maker_next {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-top: 2rem;
+        padding-bottom: 1.6rem;
+    }
+    .maker {
+        font-size: 175%;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 0;
+    }
+    .maker_name {
+        padding-top: .1rem;
+        padding-left: .3rem;
+    }
+    .next_story {
+        align-self: flex-end;
+        background-image: none;
+        border-radius: 0;
+        width: auto;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .next_story_title {
+        font-size: 100%;
+        color: rgb(211, 108, 143);
+        font-weight: bold;
+    }
+    .next_story_subtitle {
+        font-weight: bold;
+    }
+    .mobile_hidden {
+        display: none;
+    }
+
+}
